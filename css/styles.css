@@ -364,3 +364,76 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* ====================== Media Queries ====================== */
+@media (max-width:425px) {
+  body,td,th,p {
+    font-size: 1px;
+  }
+  nav h1 a {
+    letter-spacing: 5px;;
+  }
+
+  .filter-options h2 {
+    font-size: .7rem;
+  }
+  .filter-options select {
+    font-size: 0.8rem;
+    height: 30px;
+    width: 180px;
+  }
+  #restaurants-list {
+    padding: 5px;
+  }
+
+  #restaurants-list li {
+    min-height: 290px;
+    margin: 5px;
+    width: 90%;
+  }
+
+
+  #restaurant-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+  }
+  #restaurant-name {
+    grid-column-start: 1;
+    justify-self: center;
+
+    font-size: 1.6rem;
+  }
+  #restaurant-img {
+    width: 100%;
+    grid-row: 2;
+    justify-self: center;
+  }
+  #restaurant-cuisine {
+    grid-column: 1;
+    grid-row: 3;
+
+    font-size: 1.0rem;
+  }
+  #restaurant-address {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  #restaurant-hours {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  #reviews-container h2 {
+    font-size: 1.7rem;
+  }
+  #reviews-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  #reviews-list em {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+  }
+}

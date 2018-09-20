@@ -171,10 +171,12 @@ createRestaurantHTML = restaurant => {
   const image = document.createElement("img");
   image.className = "restaurant-img";
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = `${restaurant.name} Image`;
   li.append(image);
 
   const name = document.createElement("h1");
   name.innerHTML = restaurant.name;
+  name.tabIndex = "0";
   li.append(name);
 
   const neighborhood = document.createElement("p");
@@ -190,7 +192,7 @@ createRestaurantHTML = restaurant => {
   more.onclick = () => {
     window.location = DBHelper.urlForRestaurant(restaurant);
   };
-  more.tabIndex = "3";
+  more.tabIndex = "0";
   li.append(more);
 
   return li;

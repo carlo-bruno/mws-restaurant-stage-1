@@ -137,7 +137,7 @@ fillRestaurantHoursHTML = (
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById("reviews-container");
-  const title = document.createElement("h2");
+  const title = document.createElement("h3");
   title.innerHTML = "Reviews";
   container.appendChild(title);
 
@@ -159,7 +159,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = review => {
   const li = document.createElement("li");
-  const name = document.createElement("h3");
+  const name = document.createElement("h4");
   name.innerHTML = review.name;
   li.appendChild(name);
 
